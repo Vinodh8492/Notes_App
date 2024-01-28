@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 0;
+  word-wrap: break-word;
+}
+
+.not{
+  margin-top:-2vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 100vh;
+}
+
+.heading {
+  padding-left: 5vw;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.groupListContainer {
+  overflow-y: auto;
+  max-height: 63vh;
+  margin-left: 0;
+  padding-left: 0;
+  position: relative;
+  word-wrap: break-word;
+}
+
+
+.selectedGroup {
+  border: 0.1vw solid white;
+  background-color: rgb(182, 203, 222);
+  border-radius: 0.5vw;
+  margin-left: 0%;
+  padding-left: 0;
+  z-index: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh;
+  background-color: aqua;
+  width: 75vw;
+  padding-left: 15vw;
+}
+
+.lock {
+  width: 50px;
+  height: 100px;
+}
+
+.end {
+  margin-left: 15vw;
+  margin-top: 15vh;
+}
+
+.start {
+  position: fixed;
+}
+
+.ellipse {
+  width: 5vw;
+  height: 9vh;
+  position: fixed;
+  top: 85vh;
+  left: 17vw;
+}
+
+.plus {
+  width: 2.5vw;
+  height: 4.5vh;
+  position: fixed;
+  top: 87vh;
+  left: 18.3vw;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin-left: -1.5vw;
+    word-wrap: break-word;
+  }
+
+  .left {
+    width: 100%;
+    height: 100%;
+    margin-left: 5vw;
+   
+
+  }
+
+  .not {
+    display: block;
+  }
+
+  .lock,
+  .end {
+    display: none;
+  }
+
+
+  .ellipse {
+    display: block;
+    margin-bottom: 20vh;
+    margin-left: 60vw;
+    width: 14vw;
+    margin-top: 5vh;
+  }
+
+  .plus {
+    display: block;
+    margin-bottom: 20vh;
+    margin-left: 60vw;
+    width: 8vw;
+    padding-left: 2vw;
+    margin-top: 5vh;
+  }
+
+  .groupListContainer {
+    overflow-y: auto;
+    max-height: 70vh;
+    position: relative;
+    margin-bottom: 0;
+    word-wrap: break-word;
+  }
+
+  .start {
+    margin-bottom: 0;
+    padding-bottom: 0;
+   
+  }
+
+  .mobileView .left {
+    display: none;
+  }
+
+}
